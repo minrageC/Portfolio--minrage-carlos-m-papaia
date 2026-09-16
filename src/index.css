@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Outfit", sans-serif;
+  --color-cyan-glow: #00eeff;
+  --color-cyan-dim: #00dbeb;
+  --color-dark-surface: #0e141c;
+  --color-dark-container: #1b2029;
+  --color-dark-card: #252a33;
+}
+
+/* Custom hexagon clip path helper */
+.clip-hexagon {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.glow-cyan-sm {
+  box-shadow: 0 0 14px rgba(0, 238, 255, 0.4);
+}
+
+.glow-cyan-md {
+  box-shadow: 0 0 24px rgba(0, 238, 255, 0.55);
+}
+
+.glow-cyan-lg {
+  box-shadow: 0 0 35px rgba(0, 238, 255, 0.75);
+}
+
+.drop-shadow-cyan {
+  filter: drop-shadow(0 0 20px #00eeff);
+}
+

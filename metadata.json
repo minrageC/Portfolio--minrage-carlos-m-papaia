@@ -1,0 +1,6 @@
+{
+  "name": "Developer Portfolio",
+  "description": "Portfólio moderno de desenvolvedor frontend em português com suporte para inglês, tema Cyber Slate, retratos hexagonais e projetos interativos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
