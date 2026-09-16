@@ -30,11 +30,11 @@ export const PERSONAL_INFO = {
   },
   fullBio: {
     pt: [
-      "Sou um engenheiro frontend especializado com mais de seis anos de experiência transformando especificações de produtos complexas em aplicações web limpas, responsivas e visualmente marcantes. Alicerçado na execução pixel-perfect, compatibilidade entre navegadores e princípios arquiteturais modulares.",
+      "Sou um desenvolvedor frontend especializado com 1 ano de experiência prática e 5 projetos de destaque construindo aplicações web limpas, responsivas e visualmente marcantes. Alicerçado na execução pixel-perfect, compatibilidade entre navegadores e princípios arquiteturais modulares.",
       "Minha stack se concentra em frameworks modernos de componentes, TypeScript, padrões de estado reativo e arquitetura CSS projetada para velocidade extrema e zero fricção. Priorizo Core Web Vitals, semântica acessível e performance interativa fluida."
     ],
     en: [
-      "I am a specialized frontend engineer with over six years of rigorous experience turning complex, demanding product specs into clean, responsive web applications. Grounded in pixel-perfect execution, cross-browser compatibility, and modular architectural principles.",
+      "I am a specialized frontend developer with 1 year of hands-on experience and 5 featured projects building clean, responsive, and visually striking web applications. Grounded in pixel-perfect execution, cross-browser compatibility, and modular architectural principles.",
       "My stack centers around modern component frameworks, TypeScript, reactive state patterns, and CSS architecture designed for extreme velocity and zero friction. I prioritize web vitals, accessible semantics, and lightweight interactive performance."
     ]
   }
@@ -42,13 +42,13 @@ export const PERSONAL_INFO = {
 
 export const STATS: Record<Language, StatItem[]> = {
   pt: [
-    { value: "6+", label: "Anos Exp." },
-    { value: "50+", label: "Projetos" },
+    { value: "1", label: "Ano Exp." },
+    { value: "5", label: "Projetos" },
     { value: "100%", label: "Satisfação" }
   ],
   en: [
-    { value: "6+", label: "Years Exp." },
-    { value: "50+", label: "Projects" },
+    { value: "1", label: "Year Exp." },
+    { value: "5", label: "Projects" },
     { value: "100%", label: "Satisfaction" }
   ]
 };
@@ -189,16 +189,6 @@ export const PROJECTS: Record<Language, Project[]> = {
       imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuBmR-7TXDxcqeQSiO0o5PCHzDFxKanHJ6BaVAYwnYxYI2s0h_aGBCg7EgrHmZvUagD1_uxvmBhcGI8O6dYSJAlhFrYSetJ1aW0ZOCj2ujloehKg4vkviXrBdWMk0rI-4y85QVZt1f92DjZoyRqwNsd-6iDKfehPZPHCJ0uuBOy_VV-rOG0-raSqeWkQ7UNd0838kksNNt0S6ybAqCZoObeF2L1KekazxflgJLeJYFvAmRZgc0-sUjNj8A",
       tags: ["GraphGL", "Canvas API", "TypeScript", "Tailwind"],
       metrics: "10.000+ Nós a 60 FPS • Multi-Cloud"
-    },
-    {
-      id: "spatial-sound-synthesizer",
-      title: "Sintetizador de Som Espacial",
-      category: "Áudio & WebGL",
-      description: "Motor WebAudio no navegador com panning ambisônico 3D e módulos DSP configuráveis.",
-      longDescription: "Ambiente de síntese sonora espacial generativa em tempo real com visualizadores interativos de espectro de frequência, filtros de envelope modulares e osciladores WebAudio de latência ultra baixa.",
-      imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuCDdECZFEyz5-SW7NflLJTevk8U5S8xqW7W1DbyWLSLeugYT7z7_iLQhUqm_-nLuz0H8xKEzPghmzv8cLc09X4Mqyg2zqO4j_ONldrh-shKUCHAoB7KLty7x5XidSxj3q3hH1dMAupRy7MbULpoxZ1F9E9iAsvKAmG80PKuYA954uel5fXcqtNx6-lu05VO5bKXiK121kiQR8tXj5aaodPFUoOB008NMAB_LIOiVNYS949u5Osu0af7aA",
-      tags: ["WebAudio API", "Canvas 2D", "React", "DSP"],
-      metrics: "Buffering de Áudio 3.2ms • 32 Trilhas Simultâneas"
     }
   ],
   en: [
@@ -251,16 +241,6 @@ export const PROJECTS: Record<Language, Project[]> = {
       imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuBmR-7TXDxcqeQSiO0o5PCHzDFxKanHJ6BaVAYwnYxYI2s0h_aGBCg7EgrHmZvUagD1_uxvmBhcGI8O6dYSJAlhFrYSetJ1aW0ZOCj2ujloehKg4vkviXrBdWMk0rI-4y85QVZt1f92DjZoyRqwNsd-6iDKfehPZPHCJ0uuBOy_VV-rOG0-raSqeWkQ7UNd0838kksNNt0S6ybAqCZoObeF2L1KekazxflgJLeJYFvAmRZgc0-sUjNj8A",
       tags: ["GraphGL", "Canvas API", "TypeScript", "Tailwind"],
       metrics: "10,000+ Nodes at 60 FPS • Multi-Cloud"
-    },
-    {
-      id: "spatial-sound-synthesizer",
-      title: "Spatial Sound Synthesizer",
-      category: "Audio & WebGL",
-      description: "Browser-based WebAudio engine with 3D ambisonic panning and modular DSP patches.",
-      longDescription: "Real-time generative spatial audio playground equipped with interactive frequency spectrum visualizers, modular envelope filters, and low-latency WebAudio oscillators.",
-      imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuCDdECZFEyz5-SW7NflLJTevk8U5S8xqW7W1DbyWLSLeugYT7z7_iLQhUqm_-nLuz0H8xKEzPghmzv8cLc09X4Mqyg2zqO4j_ONldrh-shKUCHAoB7KLty7x5XidSxj3q3hH1dMAupRy7MbULpoxZ1F9E9iAsvKAmG80PKuYA954uel5fXcqtNx6-lu05VO5bKXiK121kiQR8tXj5aaodPFUoOB008NMAB_LIOiVNYS949u5Osu0af7aA",
-      tags: ["WebAudio API", "Canvas 2D", "React", "DSP"],
-      metrics: "3.2ms Audio Buffering • 32 Parallel Tracks"
     }
   ]
 };
@@ -336,8 +316,8 @@ export const UI_TEXT = {
       },
       cv: {
         badge: "Currículo • Desenvolvedor Frontend",
-        yearsExpTitle: "6+ Anos em Engenharia de Software",
-        yearsExpDesc: "Especializado em sistemas web de alta performance, single page applications responsivas e design systems modernos.",
+        yearsExpTitle: "1 Ano em Desenvolvimento Frontend",
+        yearsExpDesc: "Especializado na criação de aplicações web modernas, interfaces responsivas, ricas e design systems eficientes.",
         techTitle: "Competências Técnicas",
         techDesc: "TypeScript, React 19, Tailwind CSS, Next.js, Node.js, WebSockets, WebAudio, Acessibilidade WCAG AA.",
         eduTitle: "Formação & Certificações",
@@ -348,8 +328,8 @@ export const UI_TEXT = {
       about: {
         badge: "Histórico Profissional",
         meet: "Conheça",
-        p1: "Com mais de 6 anos de experiência sólida em desenvolvimento frontend moderno, tive o privilégio de arquitetar interfaces críticas voltadas ao cliente para fintechs em escala, pioneiros de web3 e agências globais de design.",
-        p2: "Minha filosofia de engenharia é focada em interfaces reativas de latência zero, conformidade com padrões de acessibilidade e design systems ergonômicos que unem com perfeição o design do Figma ao código TypeScript em produção.",
+        p1: "Com 1 ano de experiência sólida e 5 projetos de produção desenvolvidos, venho criando interfaces web dinâmicas, limpas e responsivas com atenção aos detalhes e tecnologias modernas.",
+        p2: "Minha filosofia de desenvolvimento é focada em interfaces reativas de alto desempenho, código limpo e padrões de acessibilidade que proporcionam a melhor experiência ao usuário final.",
         principlesTitle: "Princípios de Engenharia",
         principles: [
           "Fidelidade Pixel-Perfect",
@@ -433,8 +413,8 @@ export const UI_TEXT = {
       },
       cv: {
         badge: "Curriculum Vitae • Frontend Developer",
-        yearsExpTitle: "6+ Years Production Engineering",
-        yearsExpDesc: "Specialized in high-performance web systems, responsive single-page applications, and modern design systems.",
+        yearsExpTitle: "1 Year Frontend Development",
+        yearsExpDesc: "Specialized in creating modern web applications, responsive rich interfaces, and efficient component design systems.",
         techTitle: "Technical Skills",
         techDesc: "TypeScript, React 19, Tailwind CSS, Next.js, Node.js, WebSockets, WebAudio, WCAG AA Accessibility.",
         eduTitle: "Education & Credentials",
@@ -445,7 +425,7 @@ export const UI_TEXT = {
       about: {
         badge: "Engineer Background",
         meet: "Meet",
-        p1: "With over 6 years of experience in modern frontend development, I have had the privilege of architecting critical customer-facing interfaces for fintech scale-ups, web3 pioneers, and design agencies worldwide.",
+        p1: "With 1 year of dedicated hands-on experience and 5 featured production web projects, I build dynamic, clean, and responsive user interfaces using modern frontend stacks.",
         p2: "My engineering philosophy centers around zero-latency reactive UI, accessibility standards compliance, and ergonomic design systems that bridge the gap between Figma mockups and production-grade TypeScript code.",
         principlesTitle: "Engineering Principles",
         principles: [

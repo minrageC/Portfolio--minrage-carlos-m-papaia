@@ -29,22 +29,20 @@ RESUMO PROFISSIONAL:
 ${PERSONAL_INFO.shortBio.pt}
 
 EXPERIÊNCIA PROFISSIONAL:
-- Desenvolvedor Frontend Sênior | CyberTech Labs (2022 - Presente)
-  * Arquitetura de plataformas micro-frontend com React 19 & Next.js com 99.9% de uptime.
-  * Otimização de Core Web Vitals com tempo de interação (INP) reduzido para <45ms.
-- Engenheiro de Software Frontend | Nexus Interface Design (2019 - 2022)
-  * Desenvolvimento de design systems e bibliotecas de componentes reutilizáveis em TypeScript.
-  * Otimização de funis de conversão com aumento médio de 28% em mais de 40 implementações.
+- Desenvolvedor Frontend | Projetos Web & Freelance (2025 - Presente • 1 Ano)
+  * Desenvolvimento de 5 aplicações completas e responsivas utilizando React 19, TypeScript e Tailwind CSS.
+  * Otimização de Core Web Vitals, interfaces interativas e integração de APIs modernas com alta fidelidade visual.
+  * Criação de landing pages, dashboards e ferramentas web com foco em performance e acessibilidade.
 
 COMPETÊNCIAS PRINCIPAIS:
 - React 19, Next.js, TypeScript, JavaScript Moderno (ESNext)
 - Tailwind CSS, Arquitetura CSS, Framer Motion, HTML5 Semântico
-- Gerenciamento de Estado (Zustand, Redux Toolkit, TanStack Query)
-- WebSockets, WebAudio API, Visualização de Dados com D3.js
+- Gerenciamento de Estado (Zustand, React Hooks)
+- WebSockets, WebAudio API, Visualização de Dados
 - Profiling de Performance, Design Responsivo, Acessibilidade (WCAG AA)
 
 FORMAÇÃO:
-- Bacharelado em Ciência da Computação & Engenharia de Software (2018)
+- Formação em Ciência da Computação & Engenharia de Software
 ========================================
 ` : `
 ========================================
@@ -61,22 +59,20 @@ SUMMARY:
 ${PERSONAL_INFO.shortBio.en}
 
 EXPERIENCE:
-- Senior Frontend Developer | CyberTech Labs (2022 - Present)
-  * Architected micro-frontend React & Next.js platforms with 99.9% uptime.
-  * Reduced core web vital interaction to next paint (INP) to sub-45ms.
-- Frontend Engineer | Nexus Interface Design (2019 - 2022)
-  * Developed design systems and responsive component libraries in TypeScript.
-  * Optimized conversion funnels by 28% across 40+ client implementations.
+- Frontend Developer | Web Projects & Freelance (2025 - Present • 1 Year)
+  * Developed 5 complete, responsive applications using React 19, TypeScript, and Tailwind CSS.
+  * Optimized Core Web Vitals, interactive interfaces, and modern API integrations with high visual fidelity.
+  * Built web dashboards, landing pages, and developer tools focused on performance and accessibility.
 
 CORE COMPETENCIES:
 - React 19, Next.js, TypeScript, JavaScript (ESNext)
 - Tailwind CSS, CSS Architecture, Framer Motion, HTML5 / Semantic Web
-- State Management (Zustand, Redux Toolkit, React Query)
-- WebSockets, WebAudio API, D3.js data visualizations
+- State Management (Zustand, React Hooks)
+- WebSockets, WebAudio API, Data Visualizations
 - Performance Profiling, Responsive Design, Accessibility (WCAG AA)
 
 EDUCATION:
-- B.S. Computer Science & Software Engineering (2018)
+- Computer Science & Software Engineering Studies
 ========================================
 `;
 
