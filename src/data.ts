@@ -141,6 +141,17 @@ export const SERVICES: Record<Language, Service[]> = {
 export const PROJECTS: Record<Language, Project[]> = {
   pt: [
     {
+      id: "citylink-maputo",
+      title: "CityLink Maputo",
+      category: "Bilhética & Mobilidade",
+      description: "Plataforma digital para centralizar e simplificar o transporte rodoviário interprovincial em Moçambique.",
+      longDescription: "CityLink Maputo é uma plataforma digital inovadora desenvolvida para centralizar e simplificar o transporte rodoviário interprovincial em Moçambique, ligando passageiros a rotas de norte a sul do país. Conta com pesquisa avançada de trajetos (origem, destino, data e passageiros), comparador de horários e preços de autocarros, seleção interativa de assentos e emissão automática de bilhete digital com QR Code no telemóvel.",
+      imageUrl: "/citylink-maputo.jpg",
+      liveUrl: "https://citylink-maputo.lovable.app",
+      tags: ["React", "TypeScript", "Tailwind CSS", "Vite", "Lovable"],
+      metrics: "Rotas Nacionais • Bilhete Digital QR Code"
+    },
+    {
       id: "fintech-dashboard",
       title: "Dashboard FinTech",
       category: "Análise Financeira",
@@ -179,19 +190,20 @@ export const PROJECTS: Record<Language, Project[]> = {
       imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuB4Z__WJdPGoLDDxtlAbk2RTgdJiH9nj0buokO9ctjuBWCNBC-2FBc_xCrv5B47PxOlcE1Bgje1dlrHuhBEM0AY4DhkWpL0hhK4gVKuk9_UCraCUZRkVKQ_gsOBlGBLE7Xqrcpn2a0yxBEMsTuxN66ST7JDfOMVfou4F0rQKFjVzl0HDD6csqWegFOO7yR6YTxlcC54fISR9lQl4x3DRlp_62EJe-a3z1Lh6IPTyPAAePqGJYU-uJ3fGA",
       tags: ["Monaco Editor", "React", "TypeScript", "Vite"],
       metrics: "25k+ Repositórios Ativos • 40% Mais Rápido"
-    },
-    {
-      id: "cloud-topology-inspector",
-      title: "Inspetor de Topologia em Nuvem",
-      category: "Infraestrutura Cloud",
-      description: "Motor de grafo interativo mapeando clusters multirregionais e tráfego de entrada em tempo real.",
-      longDescription: "Visualizador de rede em nuvem corporativa renderizando grafos de nós distribuídos, picos de carga de tráfego e status de failover com diagnósticos HUD neon em painéis de ardósia escura.",
-      imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuBmR-7TXDxcqeQSiO0o5PCHzDFxKanHJ6BaVAYwnYxYI2s0h_aGBCg7EgrHmZvUagD1_uxvmBhcGI8O6dYSJAlhFrYSetJ1aW0ZOCj2ujloehKg4vkviXrBdWMk0rI-4y85QVZt1f92DjZoyRqwNsd-6iDKfehPZPHCJ0uuBOy_VV-rOG0-raSqeWkQ7UNd0838kksNNt0S6ybAqCZoObeF2L1KekazxflgJLeJYFvAmRZgc0-sUjNj8A",
-      tags: ["GraphGL", "Canvas API", "TypeScript", "Tailwind"],
-      metrics: "10.000+ Nós a 60 FPS • Multi-Cloud"
     }
   ],
   en: [
+    {
+      id: "citylink-maputo",
+      title: "CityLink Maputo",
+      category: "Ticketing & Mobility",
+      description: "Digital platform centralizing and simplifying interprovincial bus transport in Mozambique.",
+      longDescription: "CityLink Maputo is an innovative digital platform built to centralize and simplify interprovincial road travel across Mozambique, linking travelers from north to south. Features advanced route search (origin, destination, date, passengers), real-time operator price and timetable comparisons, interactive seat selection, and digital ticket delivery with QR Code.",
+      imageUrl: "/citylink-maputo.jpg",
+      liveUrl: "https://citylink-maputo.lovable.app",
+      tags: ["React", "TypeScript", "Tailwind CSS", "Vite", "Lovable"],
+      metrics: "Nationwide Routes • Digital QR Tickets"
+    },
     {
       id: "fintech-dashboard",
       title: "FinTech Dashboard",
@@ -231,16 +243,6 @@ export const PROJECTS: Record<Language, Project[]> = {
       imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuB4Z__WJdPGoLDDxtlAbk2RTgdJiH9nj0buokO9ctjuBWCNBC-2FBc_xCrv5B47PxOlcE1Bgje1dlrHuhBEM0AY4DhkWpL0hhK4gVKuk9_UCraCUZRkVKQ_gsOBlGBLE7Xqrcpn2a0yxBEMsTuxN66ST7JDfOMVfou4F0rQKFjVzl0HDD6csqWegFOO7yR6YTxlcC54fISR9lQl4x3DRlp_62EJe-a3z1Lh6IPTyPAAePqGJYU-uJ3fGA",
       tags: ["Monaco Editor", "React", "TypeScript", "Vite"],
       metrics: "25k+ Active Repositories • 40% Review Speedup"
-    },
-    {
-      id: "cloud-topology-inspector",
-      title: "Cloud Topology Inspector",
-      category: "Cloud Infrastructure",
-      description: "Interactive graph engine mapping multi-region server clusters and live ingress throughput.",
-      longDescription: "Enterprise cloud network visualizer rendering distributed node graphs, traffic load spikes, and failover status with neon HUD diagnostics on dark obsidian panels.",
-      imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuBmR-7TXDxcqeQSiO0o5PCHzDFxKanHJ6BaVAYwnYxYI2s0h_aGBCg7EgrHmZvUagD1_uxvmBhcGI8O6dYSJAlhFrYSetJ1aW0ZOCj2ujloehKg4vkviXrBdWMk0rI-4y85QVZt1f92DjZoyRqwNsd-6iDKfehPZPHCJ0uuBOy_VV-rOG0-raSqeWkQ7UNd0838kksNNt0S6ybAqCZoObeF2L1KekazxflgJLeJYFvAmRZgc0-sUjNj8A",
-      tags: ["GraphGL", "Canvas API", "TypeScript", "Tailwind"],
-      metrics: "10,000+ Nodes at 60 FPS • Multi-Cloud"
     }
   ]
 };
@@ -305,7 +307,8 @@ export const UI_TEXT = {
       project: {
         tech: "Tecnologias & Ferramentas",
         inquire: "Solicitar Projeto Similar",
-        viewHighRes: "Ver Mockup em Alta Resolução",
+        viewHighRes: "Ver Mockup",
+        viewLive: "Ver Projeto Online",
         close: "Fechar"
       },
       service: {
@@ -402,7 +405,8 @@ export const UI_TEXT = {
       project: {
         tech: "Technologies & Tools",
         inquire: "Inquire About Similar Project",
-        viewHighRes: "View High-Res Mockup",
+        viewHighRes: "View Mockup",
+        viewLive: "Visit Live Project",
         close: "Close"
       },
       service: {

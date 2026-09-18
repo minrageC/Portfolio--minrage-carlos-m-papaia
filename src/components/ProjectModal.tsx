@@ -83,14 +83,30 @@ export default function ProjectModal({ project, language, onClose, onContactClic
         </div>
 
         {/* Action Buttons */}
-        <div className="flex flex-wrap gap-3 pt-4 border-t border-[#30353e]">
+        <div className="flex flex-wrap items-center gap-3 pt-4 border-t border-[#30353e]">
+          {project.liveUrl && (
+            <a
+              id="modal-live-link-btn"
+              href={project.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 py-3 px-6 rounded-full bg-[#00eeff] text-[#00363b] font-['Space_Grotesk'] text-sm font-bold shadow-[0_0_20px_rgba(0,238,255,0.6)] hover:shadow-[0_0_30px_rgba(0,238,255,0.9)] hover:scale-105 active:scale-95 text-center transition-all cursor-pointer"
+            >
+              <span>{t.viewLive || "Ver Projeto Online"}</span>
+              <ExternalLink className="w-4 h-4" />
+            </a>
+          )}
           <button
             id="modal-inquire-btn"
             onClick={() => {
               onClose();
               onContactClick();
             }}
-            className="flex-1 min-w-[160px] py-3 px-6 rounded-full bg-[#00eeff] text-[#00363b] font-['Space_Grotesk'] text-sm font-bold shadow-[0_0_16px_rgba(0,238,255,0.4)] hover:shadow-[0_0_24px_rgba(0,238,255,0.7)] text-center transition-all cursor-pointer"
+            className={`flex-1 min-w-[160px] py-3 px-6 rounded-full font-['Space_Grotesk'] text-sm font-bold text-center transition-all cursor-pointer ${
+              project.liveUrl
+                ? "bg-[#252a33] hover:bg-[#30353e] text-[#dee2ef] border border-[#30353e]"
+                : "bg-[#00eeff] text-[#00363b] shadow-[0_0_16px_rgba(0,238,255,0.4)] hover:shadow-[0_0_24px_rgba(0,238,255,0.7)]"
+            }`}
           >
             {t.inquire}
           </button>

@@ -1,4 +1,4 @@
-import { ExternalLink, Sparkles } from 'lucide-react';
+import { ExternalLink, Sparkles, Globe } from 'lucide-react';
 import { PROJECTS, UI_TEXT } from '../data';
 import { Project, Language } from '../types';
 
@@ -50,14 +50,20 @@ export default function PortfolioSection({ language, onSelectProject }: Portfoli
               />
 
               {/* Tag chip badge (visible by default) */}
-              <div className="absolute top-3 left-3 z-10 opacity-90 group-hover:opacity-0 transition-opacity duration-300">
+              <div className="absolute top-3 left-3 z-10 opacity-90 group-hover:opacity-0 transition-opacity duration-300 flex items-center gap-1.5">
                 <span className="px-3 py-1 rounded-full text-xs font-['Space_Grotesk'] font-medium bg-[#0e141c]/80 backdrop-blur-md text-[#d7fbff] border border-[#30353e]">
                   {project.category}
                 </span>
+                {project.liveUrl && (
+                  <span className="px-2.5 py-1 rounded-full text-[11px] font-['Space_Grotesk'] font-semibold bg-[#00eeff]/15 text-[#00eeff] border border-[#00eeff]/40 flex items-center gap-1 backdrop-blur-md">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#00eeff] animate-pulse"></span>
+                    Live
+                  </span>
+                )}
               </div>
 
               {/* Hover Overlay Scrim */}
-              <div className="absolute inset-0 bg-[#0e141c]/90 opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col items-center justify-center p-6 text-center backdrop-blur-xs">
+              <div className="absolute inset-0 bg-[#0e141c]/92 opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col items-center justify-center p-6 text-center backdrop-blur-xs">
                 <span className="text-xs font-['Space_Grotesk'] text-[#00eeff] uppercase tracking-wider mb-1 flex items-center gap-1">
                   <Sparkles className="w-3.5 h-3.5" />
                   {project.category}
@@ -71,12 +77,30 @@ export default function PortfolioSection({ language, onSelectProject }: Portfoli
                   {project.description}
                 </p>
 
-                {/* Open Modal Button */}
-                <div
-                  id={`project-overlay-btn-${project.id}`}
-                  className="mt-4 w-12 h-12 rounded-full bg-[#00eeff] text-[#00363b] flex items-center justify-center shadow-[0_0_18px_rgba(0,238,255,0.6)] hover:scale-110 active:scale-95 transition-all duration-200"
-                >
-                  <ExternalLink className="w-5 h-5" />
+                {/* Actions: Direct Live Link or Details Modal */}
+                <div className="mt-4 flex items-center gap-3">
+                  {project.liveUrl && (
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                      className="px-4 py-2 rounded-full bg-[#00eeff] text-[#00363b] text-xs font-['Space_Grotesk'] font-bold flex items-center gap-1.5 shadow-[0_0_15px_rgba(0,238,255,0.5)] hover:scale-105 active:scale-95 transition-all"
+                      title={language === 'pt' ? 'Abrir no Lovable' : 'Open in Lovable'}
+                    >
+                      <Globe className="w-3.5 h-3.5" />
+                      <span>{language === 'pt' ? 'Ver Online' : 'Live Demo'}</span>
+                    </a>
+                  )}
+
+                  {/* Open Modal Button */}
+                  <div
+                    id={`project-overlay-btn-${project.id}`}
+                    className="w-10 h-10 rounded-full bg-[#252a33] border border-[#30353e] text-[#00eeff] flex items-center justify-center hover:bg-[#30353e] hover:border-[#00eeff]/50 active:scale-95 transition-all duration-200"
+                    title={language === 'pt' ? 'Ver Detalhes' : 'View Details'}
+                  >
+                    <ExternalLink className="w-4 h-4" />
+                  </div>
                 </div>
               </div>
             </div>
